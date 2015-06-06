@@ -25,6 +25,7 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CircularTableViewCell
         cell.circularImageView.image = UIImage(named: "cat")
+        cell.titleLabel.text = data[indexPath.row]
         return cell
     }
 

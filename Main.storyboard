@@ -26,16 +26,25 @@
                                                 <constraint firstAttribute="width" secondItem="0Vn-T0-Ttl" secondAttribute="height" multiplier="1:1" id="LVO-Z5-2FM"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oC-qG-y2b">
+                                            <rect key="frame" x="189" y="87" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="0Vn-T0-Ttl" firstAttribute="top" secondItem="1bp-Rx-QdI" secondAttribute="topMargin" id="3xq-rX-HGc"/>
                                         <constraint firstItem="0Vn-T0-Ttl" firstAttribute="leading" secondItem="1bp-Rx-QdI" secondAttribute="leadingMargin" constant="-16" id="8kV-Kr-s39"/>
+                                        <constraint firstItem="7oC-qG-y2b" firstAttribute="leading" secondItem="0Vn-T0-Ttl" secondAttribute="trailing" constant="17" id="O4n-oP-s8g"/>
+                                        <constraint firstAttribute="centerY" secondItem="7oC-qG-y2b" secondAttribute="centerY" constant="-7.5" id="ZC5-HU-DtD"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="0Vn-T0-Ttl" secondAttribute="bottom" constant="-16" id="eIZ-bv-t9l"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="circularImageView" destination="0Vn-T0-Ttl" id="HNU-Eo-Kmr"/>
                                     <outlet property="imageView" destination="0Vn-T0-Ttl" id="81n-2x-c9b"/>
+                                    <outlet property="titleLabel" destination="7oC-qG-y2b" id="DgD-iC-2Sa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

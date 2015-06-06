@@ -11,6 +11,7 @@ import UIKit
 
 class CircularTableViewCell: UITableViewCell {
     @IBOutlet weak var circularImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     override func layoutSubviews() {
        circularImageView.round()
     }
