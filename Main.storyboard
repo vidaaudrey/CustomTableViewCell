@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S5i-zI-41b">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="vdy-mN-Rda">
+            <objects>
+                <tableViewController id="S5i-zI-41b" customClass="TableViewController" customModule="CustomTableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="181" sectionHeaderHeight="22" sectionFooterHeight="22" id="YZp-yh-9pJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="181" id="SQR-HB-CTP" customClass="CircularTableViewCell" customModule="CustomTableViewCell" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SQR-HB-CTP" id="1bp-Rx-QdI">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="0Vn-T0-Ttl">
+                                            <rect key="frame" x="-8" y="8" width="180" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="0Vn-T0-Ttl" secondAttribute="height" multiplier="1:1" id="LVO-Z5-2FM"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0Vn-T0-Ttl" firstAttribute="top" secondItem="1bp-Rx-QdI" secondAttribute="topMargin" id="3xq-rX-HGc"/>
+                                        <constraint firstItem="0Vn-T0-Ttl" firstAttribute="leading" secondItem="1bp-Rx-QdI" secondAttribute="leadingMargin" constant="-16" id="8kV-Kr-s39"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0Vn-T0-Ttl" secondAttribute="bottom" constant="-16" id="eIZ-bv-t9l"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="circularImageView" destination="0Vn-T0-Ttl" id="HNU-Eo-Kmr"/>
+                                    <outlet property="imageView" destination="0Vn-T0-Ttl" id="81n-2x-c9b"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="S5i-zI-41b" id="Oxz-Rd-16E"/>
+                            <outlet property="delegate" destination="S5i-zI-41b" id="0Pe-2H-3By"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tM0-TE-IuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="1411"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="361" height="378"/>
+    </resources>
+</document>
